@@ -1,0 +1,75 @@
+@import './style.scss';
+.forum_tread {
+    padding: 30px;
+    background-color: $light_blue;
+    @media screen and (max-width: 850px) {
+        padding: 30px 0;
+    }
+    .forum_tread_name {
+        margin: auto;
+        width: max-content;
+        span {
+            font-size: 2.5rem;
+        }
+    }
+    .forum_tread_content {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        padding: 10px;
+        background-color: $dark_blue;
+        @media screen and (max-width: 850px) {
+            padding: 10px 0;
+        }
+        .forum_message {
+            box-sizing: content-box;
+            padding: 10px;
+            // max-height: 6rem;
+            display: flex;
+            text-decoration: none;
+            background-color: $dark_blue;
+            color: $white;
+            letter-spacing: 1px;
+            div {
+                // font-family: PrimaryFont;
+                padding: 3px;
+                &:nth-child(1) {
+                    width: 200px;
+                    height: fit-content;
+                    border-right: 1px solid #ffffff;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                &:nth-child(2) {
+                    padding-left: 10px;
+                    flex: 1;
+                    font-family: SecondaryFont;
+                    font-size: 1rem;
+                    line-height: 1.2;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            @media screen and (max-width: 660px) {
+                flex-direction: column;
+                height: auto;
+                max-height: none;
+                div {
+                    box-sizing: content-box;
+                    width: 100%!important;
+                    &:nth-child(1) {
+                        border-right: 0;
+                        border-bottom: 1px solid #ffffff;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    &:nth-child(2) {
+                        padding-left: 3px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+}

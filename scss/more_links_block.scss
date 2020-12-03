@@ -1,0 +1,35 @@
+@import './style.scss';
+.more_links_wrapper {
+    padding: 30px;
+    background-color: $light_blue;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 850px) {
+        padding: 30px 0;
+    }
+    .link-container {
+        display: flex;
+        width: 100%;
+        .link {
+            font-size: 1.5rem;
+            color: #bdbdbd;
+            width: 100%;
+            padding: 20px;
+            &:link {
+                text-decoration: none;
+            }
+            &:visited {
+                text-decoration: none;
+            }
+            &:hover {
+                background-color: $dark_blue;
+                color: $white;
+                text-decoration: none;
+            }
+            &:active {
+                color: $dark_blue;
+                text-decoration: none;
+            }
+        }
+    }
+}

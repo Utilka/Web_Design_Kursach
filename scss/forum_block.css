@@ -1,0 +1,293 @@
+@font-face {
+  font-family: PrimaryFont;
+  src: url(../fonts/bravo.otf); }
+@font-face {
+  font-family: SecondaryFont;
+  src: url(../fonts/Candara.ttf); }
+.link {
+  text-decoration: none;
+  color: #bdbdbd;
+  position: relative; }
+  .link:link {
+    text-decoration: none; }
+  .link:visited {
+    color: #767676;
+    text-decoration: none; }
+  .link:hover {
+    background-color: #465461;
+    color: #ffffff;
+    text-decoration: none; }
+  .link:active {
+    color: #2b2b2b;
+    text-decoration: none; }
+
+html,
+body {
+  height: 100%;
+  margin: 0; }
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  line-height: 1;
+  font-family: PrimaryFont;
+  color: #000000;
+  background-color: #aaaaaa; }
+  body .aside_menu {
+    display: none;
+    width: 15%;
+    height: 500px;
+    background-color: #ffffff;
+    float: left; }
+  body .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #ffffff;
+    flex: 1; }
+    body .wrapper .header {
+      background-color: #121518;
+      display: flex;
+      height: auto;
+      justify-content: space-between; }
+      body .wrapper .header div {
+        display: flex;
+        justify-content: space-between; }
+        body .wrapper .header div .logo {
+          display: block;
+          background-image: url(../img/logo_or.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 170px;
+          height: 68px; }
+        body .wrapper .header div .show-menu {
+          display: none; }
+    body .wrapper .welcome {
+      margin: 0 auto;
+      padding: 2vw;
+      font-size: 3rem;
+      font-variant: small-caps; }
+    body .wrapper .main .block_new_in {
+      background-color: #465461;
+      height: min-content;
+      padding: 2vw;
+      margin-bottom: 2vw; }
+      body .wrapper .main .block_new_in h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1vw;
+        color: #121518; }
+        body .wrapper .main .block_new_in h2 span {
+          color: #ffffff; }
+      body .wrapper .main .block_new_in .news_container {
+        display: flex;
+        overflow-x: auto; }
+  body .footer {
+    font-family: SecondaryFont;
+    padding: 3vw;
+    background-color: #121518;
+    color: #ffffff;
+    text-align: center; }
+
+@media screen and (max-width: 479px) {
+  body .wrapper {
+    width: 100%; }
+    body .wrapper .main .block_new_in {
+      background-color: #465461;
+      height: min-content;
+      padding: 5vw 0;
+      margin-bottom: 2vw; }
+      body .wrapper .main .block_new_in h2 {
+        padding: 2vw;
+        font-size: 2.5rem;
+        margin-bottom: 1vw;
+        color: #121518; }
+        body .wrapper .main .block_new_in h2 span {
+          color: #ffffff; }
+      body .wrapper .main .block_new_in .news_container {
+        display: flex;
+        overflow-x: auto; } }
+@media screen and (min-width: 480px) and (max-width: 659px) {
+  body .wrapper {
+    width: 100%; }
+    body .wrapper .main .block_new_in {
+      background-color: #465461;
+      height: min-content;
+      padding: 4vw 0;
+      margin-bottom: 2vw; }
+      body .wrapper .main .block_new_in h2 {
+        padding: 2vw;
+        font-size: 2.5rem;
+        margin-bottom: 1vw;
+        color: #121518; }
+        body .wrapper .main .block_new_in h2 span {
+          color: #ffffff; }
+      body .wrapper .main .block_new_in .news_container {
+        display: flex;
+        overflow-x: auto; } }
+@media screen and (min-width: 660px) and (max-width: 767px) {
+  body .wrapper {
+    width: 100%; }
+    body .wrapper .main .block_new_in {
+      background-color: #465461;
+      height: min-content;
+      padding: 3vw 0;
+      margin-bottom: 2vw; }
+      body .wrapper .main .block_new_in h2 {
+        padding: 2vw;
+        font-size: 2.5rem;
+        margin-bottom: 1vw;
+        color: #121518; }
+        body .wrapper .main .block_new_in h2 span {
+          color: #ffffff; }
+      body .wrapper .main .block_new_in .news_container {
+        display: flex;
+        overflow-x: auto; } }
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  body .wrapper {
+    width: 100%; } }
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+  body .wrapper {
+    width: 85%; } }
+@media screen and (min-width: 1200px) {
+  body .wrapper {
+    width: 70%; } }
+.forum_block {
+  padding: 30px;
+  background-color: #465461; }
+  @media screen and (max-width: 850px) {
+    .forum_block {
+      padding: 30px 0; } }
+  .forum_block .forum_block_name {
+    margin: auto;
+    width: max-content; }
+    .forum_block .forum_block_name span {
+      font-size: 2.5rem;
+      margin: auto; }
+  .forum_block .forum_block_header {
+    padding: 0 20px;
+    font-size: 1.5rem;
+    text-align: center; }
+    .forum_block .forum_block_header:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle; }
+    .forum_block .forum_block_header div {
+      padding: 3px;
+      vertical-align: middle;
+      display: inline-block; }
+      .forum_block .forum_block_header div:nth-child(2):before {
+        content: '/';
+        display: inline-block;
+        margin-right: 10.41px; }
+      .forum_block .forum_block_header div:nth-child(2):after {
+        content: '/';
+        display: inline-block;
+        margin-left: 10.41px; }
+      .forum_block .forum_block_header div:nth-child(3) {
+        text-align: center; }
+      .forum_block .forum_block_header div:nth-child(4) {
+        text-align: center; }
+        .forum_block .forum_block_header div:nth-child(4):before {
+          content: '/';
+          display: inline-block;
+          margin-right: 10.41px; }
+    @media screen and (max-width: 660px) {
+      .forum_block .forum_block_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .forum_block .forum_block_header div {
+          width: max-content; }
+          .forum_block .forum_block_header div:nth-child(1) {
+            border-bottom: 1px solid #000000; }
+          .forum_block .forum_block_header div:nth-child(2) {
+            border-bottom: 1px solid #000000; }
+            .forum_block .forum_block_header div:nth-child(2):before {
+              content: '';
+              display: block;
+              margin: 0; }
+            .forum_block .forum_block_header div:nth-child(2):after {
+              content: '';
+              display: block;
+              margin: 0; }
+          .forum_block .forum_block_header div:nth-child(3) {
+            border-bottom: 1px solid #000000; }
+          .forum_block .forum_block_header div:nth-child(4) {
+            text-align: center; }
+            .forum_block .forum_block_header div:nth-child(4):before {
+              content: '';
+              display: block;
+              margin: 0; } }
+  .forum_block .forum_content {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: #121518; }
+    @media screen and (max-width: 850px) {
+      .forum_block .forum_content {
+        padding: 10px 0; } }
+    .forum_block .forum_content .forum_tread {
+      box-sizing: content-box;
+      padding: 10px;
+      height: 4.5rem;
+      display: flex;
+      text-decoration: none;
+      background-color: #121518;
+      color: #ffffff; }
+      .forum_block .forum_content .forum_tread span {
+        font-family: PrimaryFont;
+        padding: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        .forum_block .forum_content .forum_tread span:nth-child(1) {
+          font-family: SecondaryFont;
+          font-size: 1rem;
+          flex: 1;
+          border-right: 1px solid #ffffff; }
+        .forum_block .forum_content .forum_tread span:nth-child(2) {
+          font-family: SecondaryFont;
+          font-size: 1rem;
+          padding-left: 10px;
+          flex: 1;
+          border-right: 1px solid #ffffff; }
+        .forum_block .forum_content .forum_tread span:nth-child(3) {
+          width: 140px;
+          text-align: center;
+          border-right: 1px solid #ffffff; }
+        .forum_block .forum_content .forum_tread span:nth-child(4) {
+          width: 100px;
+          text-align: center; }
+      @media screen and (max-width: 1725px) {
+        .forum_block .forum_content .forum_tread {
+          height: 6rem; } }
+      @media screen and (max-width: 870px) {
+        .forum_block .forum_content .forum_tread span:nth-child(3) {
+          width: 37%; } }
+      @media screen and (max-width: 660px) {
+        .forum_block .forum_content .forum_tread {
+          flex-direction: column;
+          height: auto; }
+          .forum_block .forum_content .forum_tread span {
+            box-sizing: content-box;
+            width: 100% !important; }
+            .forum_block .forum_content .forum_tread span:nth-child(1) {
+              max-height: 9rem;
+              border-right: 0;
+              border-bottom: 1px solid #ffffff; }
+            .forum_block .forum_content .forum_tread span:nth-child(2) {
+              max-height: 9rem;
+              border-right: 0;
+              border-bottom: 1px solid #ffffff; }
+            .forum_block .forum_content .forum_tread span:nth-child(3) {
+              border-right: 0;
+              border-bottom: 1px solid #ffffff; } }
+    .forum_block .forum_content .forum_tread:hover {
+      background-color: #465461; }
+    .forum_block .forum_content .forum_tread:active span {
+      text-decoration-line: underline;
+      text-decoration-style: solid; }
+
+/*# sourceMappingURL=forum_block.css.map */

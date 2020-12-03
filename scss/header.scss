@@ -1,0 +1,89 @@
+@import './style.scss';
+body {
+    .wrapper {
+        .header {
+            .nav {
+                display: flex;
+                height: auto;
+                flex-wrap: nowrap;
+                .nav__link-container {
+                    display: flex;
+                    height: auto;
+                    .nav__link {
+                        width: 100%;
+                        color: lighten($color: $light_blue, $amount: 30);
+                        font-size: 1.5rem;
+                        padding: 20px 29px 24px 29px;
+                        text-transform: uppercase;
+                        &:link {
+                            text-decoration: none;
+                        }
+                        &:visited {
+                            text-decoration: none;
+                        }
+                        &:hover {
+                            background-color: $light_blue;
+                            color: $white;
+                            text-decoration: none;
+                        }
+                        &:active {
+                            color: $dark_blue;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                #show-nav {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    // from here hide nav
+    body {
+        .wrapper {
+            .header {
+                flex-direction: column;
+                .nav {
+                    display: none;
+                    height: auto;
+                    flex-direction: column;
+                }
+                #show-nav {
+                    content: "";
+                    display: block;
+                    width: 58px;
+                    height: 58px;
+                    margin: 5px;
+                    background: url('../img/menu_white.png') no-repeat;
+                    background-size: cover;
+                    transition: transform .2s ease-in-out;
+                    -webkit-transition: transform .2s ease-in-out;
+                    -moz-transition: transform .2s ease-in-out;
+                    -ms-transition: transform .2s ease-in-out;
+                    -o-transition: transform .2s ease-in-out;
+                    transform: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    -o-transform: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    body {
+        .wrapper {
+            .header {
+                flex-direction: row;
+                .nav {
+                    display: flex!important;
+                }
+            }
+        }
+    }
+}

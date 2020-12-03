@@ -1,0 +1,22 @@
+@import './style.scss';
+.about_us_wrapper {
+    background-color: $light_blue;
+    padding: 30px;
+    line-height: 1.2;
+    // letter-spacing: 1px;
+    h2 {
+        font-family: PrimaryFont;
+        color: $orange;
+        font-size: 4.5rem;
+    }
+    h3 {
+        font-family: PrimaryFont;
+        color: $orange;
+        font-size: 3rem;
+    }
+    p {
+        font-family: SecondaryFont;
+        color: $black;
+        font-size: 1.3rem;
+    }
+}
